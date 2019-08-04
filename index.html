@@ -1,0 +1,104 @@
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" language="JavaScript">
+		//定义一个js的函数方法
+		function aa(){
+			alert("哈哈哈,写在head中的script标签中的js方法");
+		}
+	</script>
+	<script src="js/Demo1.js"></script>
+	<style>
+		#msg{
+			border:1px solid red;
+			padding:10px;
+			text-align: center;
+			width:200px;
+			background-color: #eee;
+		}
+		.hide{
+			/*元素不显示*/
+			display: none;
+		}
+		.show{
+			/*元素显示*/
+			display: block;
+		}
+	</style>
+	</head>
+	<body>
+		<input type="button" value="按钮1" onclick="alert('哈哈哈,html元素内部触发事件')"/>
+		<input type="button" value="按钮2" onclick="aa()";/>
+		<input type="button" value="按钮3" onclick="bb()";/>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo1();"/>
+		测试类型转换函数
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo2();"/>
+		测试null和undefined
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo3();"/>
+		测试内置对象String
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo4();"/>
+		测试内置对象Number
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo5();"/>
+		测试内置对象数组arr
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo6();"/>
+		测试内置对象日期date
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo7();"/>
+		测试内置对象正则RegExp
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo8();"/>
+		测试内置对象arguments数组
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo9();"/>
+		测试匿名函数
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo10();"/>
+		测试内置对象Function对象
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="alert('aaa')"/>
+		测试alert
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo11();"/>
+		测试confirm
+		</span>
+		<br>
+		<span>动态时钟 setInterval方法</span>
+		<br>
+		<input type="button" value="启动" onclick="start();"/>
+		<input type="button" value="停止" onclick="stop();"/>
+		<br>
+		<div>当前时间:<span id="clock"></span></div>
+		<br>
+		<span>动态提示信息</span>
+		<br>
+		<div>
+			<input type="button" value="删除" onclick="del();"/>
+		</div>
+		<div id="msg" class="hide">操作成功</div>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo12();"/>
+		测试外部对象location
+		</span>
+		<br>
+		<span style="cursor:pointer;text-decoration:underline;" onclick="demo13();"/>
+		测试外部对象navgator
+		</span>
+	</body>
+</html>
